@@ -1,15 +1,8 @@
-/* PRIVATE USAGE */
-type errorLocation = Js.t {. line : int, column : int};
-
-/* PRIVATE USAGE */
-type error = Js.t {. message : string, locations : Js.Array.t errorLocation};
-
-
 /**
  * Represents a result from GraphQL, being either a success or a failure
  */
 type executionResult 'dataObj =
-  Js.t {. data : Js.t 'dataObj, errors : Js.Null.t (Js.Array.t error)};
+  Js.t {. data : Js.t 'dataObj, errors : Js.Null.t (Js.Array.t GraphQLError_.error)};
 
 
 /**

@@ -4,6 +4,10 @@ module Type = GraphQLType_;
 
 module Utilities = GraphQLUtilities_;
 
+module Error = GraphQLError_;
+
+module Language = GraphQLLanguage_;
+
 
 /**
  * This is the primary entry point function for fulfilling GraphQL operations
