@@ -1,5 +1,7 @@
 # bs-graphql
 
+[![CircleCI](https://circleci.com/gh/rricard/bs-graphql.svg?style=svg)](https://circleci.com/gh/rricard/bs-graphql)
+
 [BuckleScript](https://bucklescript.github.io/) binding for [graphql-js](http://graphql.org/graphql-js/).
 
 ## Installation
