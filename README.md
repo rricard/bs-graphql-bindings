@@ -53,3 +53,7 @@ Then, you can run two watchers, one for compiling, one for testing:
 
 - `yarn watch`
 - `yarn test -- --watch`
+
+## Related projects
+
+- [bs-graphql-tools](https://github.com/rricard/bs-graphql-tools) - Build complex schemas more easily using [graphql-tools](https://github.com/apollographql/graphql-tools).
