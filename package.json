@@ -13,8 +13,7 @@
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
     "pretest": "npm run build",
-    "test": "jest",
-    "prepublish": "npm run build"
+    "test": "jest"
   },
   "devDependencies": {
     "bs-jest": "^0.1.0",
