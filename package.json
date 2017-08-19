@@ -1,0 +1,23 @@
+{
+  "name": "bs-graphql",
+  "version": "0.1.0",
+  "description": "BuckleScript binding for graphql-js",
+  "keywords": [
+    "BuckleScript",
+    "GraphQL"
+  ],
+  "license": "MIT",
+  "main": "src/GraphQL.re",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "pretest": "npm run build",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "bs-jest": "^0.1.0",
+    "bs-platform": "1.8.2",
+    "graphql": "^0.10.5"
+  }
+}
