@@ -11,7 +11,7 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
-      - run: yarn install --global jest
+      - run: yarn global add jest
       - run: yarn install
       - save_cache:
           paths:
