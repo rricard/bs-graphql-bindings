@@ -18,5 +18,8 @@
   "dependencies": {
     "bs-graphql": "^0.3.0",
     "graphql-tools": "^1.2.1"
+  },
+  "devDependencies": {
+    "bs-jest": "^0.1.0"
   }
 }

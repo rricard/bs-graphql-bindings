@@ -16,5 +16,8 @@
   },
   "peerDependencies": {
     "graphql": "^0.10.5"
+  },
+  "devDependencies": {
+    "bs-jest": "^0.1.0"
   }
 }
