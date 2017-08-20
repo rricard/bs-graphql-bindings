@@ -58,7 +58,7 @@ Add the bindings in `bsconfig.json`:
 
 We're starting the development, you should run a watch process: `yarn watch || npm run watch`.
 
-Remove `demo.re` and the following files:
+Remove `demo.re` and add the following files:
 
 First we'll define a Reason type alongside an associated GraphQL schema and resolver functions: `Episode.re`:
 
