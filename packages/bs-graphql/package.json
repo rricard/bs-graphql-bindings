@@ -7,7 +7,6 @@
     "GraphQL"
   ],
   "license": "MIT",
-  "main": "src/GraphQL.re",
   "scripts": {
     "clean": "bsb -clean-world",
     "build": "bsb -make-world",
@@ -16,9 +15,6 @@
     "test": "jest"
   },
   "devDependencies": {
-    "bs-jest": "^0.1.0",
-    "bs-platform": "1.8.2",
-    "graphql": "^0.10.5",
-    "jest": "^19.0.2"
+    "graphql": "^0.10.5"
   }
 }
