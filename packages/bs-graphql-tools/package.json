@@ -1,0 +1,22 @@
+{
+  "name": "bs-graphql-tools",
+  "version": "0.1.0",
+  "description": "BuckleScript binding for graphql-tools",
+  "keywords": [
+    "BuckleScript",
+    "GraphQL",
+    "Apollo"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "pretest": "npm run build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "bs-graphql": "^0.1.2",
+    "graphql-tools": "^1.2.1"
+  }
+}
