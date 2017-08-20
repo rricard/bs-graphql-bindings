@@ -1,6 +1,6 @@
 {
   "name": "bs-graphql",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "BuckleScript binding for graphql-js",
   "keywords": [
     "BuckleScript",
