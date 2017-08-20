@@ -1,3 +1,4 @@
+/* This one should be moved to its own package once we add the next apollo-server variant */
 type logAction = string;
 
 type logStep = string;
