@@ -103,7 +103,7 @@ external bodyParserJson : unit => Express.Middleware.t = "json" [@@bs.module "bo
 let () = {
   let app = Express.App.make ();
   Express.App.use app (bodyParserJson ());
-  let graphqlMiddleware = ApolloServerExpress.createGraphQLExpressMiddleware schema ::rootValue;
+  let graphqlMiddleware = ApolloServerExpress.createGraphQLExpressMiddleware Schema.schema;
   let graphiqlMiddleware = ApolloServerExpress.createGraphiQLExpressMiddleware "/graphql";
   Express.App.useOnPath app graphqlMiddleware path::"/graphql";
   Express.App.useOnPath app graphiqlMiddleware path::"/graphiql";
