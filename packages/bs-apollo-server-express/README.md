@@ -30,19 +30,14 @@ You can start a GraphQL server using bs-graphql, bs-express and this binding:
 
 ```reason
 let app = Express.App.make ();
-
 let schema = GraphQL.Utilities.buildSchema "type Query { hello: String }";
-
 let rootValue = {"hello": fun () => "world"};
-
-let middleware = ApolloServerExpress.createGraphQLExpressMiddleware schema ::rootValue;
-
 external bodyParserJson : unit => Express.Middleware.t = "json" [@@bs.module "body-parser"];
-
 Express.App.use app (bodyParserJson ());
-
-Express.App.useOnPath app middleware path::"/graphql";
-
+let graphqlMiddleware = ApolloServerExpress.createGraphQLExpressMiddleware schema ::rootValue;
+let graphiqlMiddleware = ApolloServerExpress.createGraphiQLExpressMiddleware "/graphql";
+Express.App.useOnPath app graphqlMiddleware path::"/graphql";
+Express.App.useOnPath app graphiqlMiddleware path::"/graphiql";
 Express.App.listen app port::8080;
 ```
 
