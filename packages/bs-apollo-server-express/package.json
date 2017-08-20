@@ -1,6 +1,6 @@
 {
   "name": "bs-apollo-server-express",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "BuckleScript binding for apollo-server-express",
   "keywords": [
     "BuckleScript",
@@ -18,8 +18,8 @@
   },
   "dependencies": {
     "apollo-server-express": "^1.1.0",
-    "bs-graphql": "^0.3.0",
-    "bs-express": "^0.0.2"
+    "bs-express": "^0.0.2",
+    "bs-graphql": "^0.3.1"
   },
   "devDependencies": {
     "body-parser": "^1.17.2",
