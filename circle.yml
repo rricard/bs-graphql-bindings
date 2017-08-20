@@ -10,15 +10,19 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
-      - name: Install global dev env
-        run: yarn install
+      - run:
+          name: Install global dev env
+          command: yarn install
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}  
-      - name: Bootstrap lerna throughout the packages
-        run: node_modules/.bin/lerna bootstrap
-      - name: Build all packages
-        run: yarn build
-      - name: Trigger the test suite over all the packages
-        run: yarn test
+      - run:
+          name: Bootstrap lerna throughout the packages
+          command: node_modules/.bin/lerna bootstrap
+      - run:
+          name: Build all packages
+          command: yarn build
+      - run:
+          name: Trigger the test suite over all the packages
+          command: yarn test
