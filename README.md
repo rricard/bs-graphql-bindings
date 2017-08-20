@@ -20,6 +20,8 @@ The following packages are contained in this repository and published on npm:
 
 ### Your first Reason-GraphQL server
 
+**TL;DR;**: This repo has it all with a few interesting things more (such as snapshot testing with jest): https://github.com/rricard/graphql-reason-server-example.
+
 This short guide will show you how to setup a GraphQL server fast.
 
 First, you will need a reason codebase:
