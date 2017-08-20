@@ -8,6 +8,8 @@ module Error = GraphQLError_;
 
 module Language = GraphQLLanguage_;
 
+module Validation = GraphQLValidation_;
+
 
 /**
  * This is the primary entry point function for fulfilling GraphQL operations
