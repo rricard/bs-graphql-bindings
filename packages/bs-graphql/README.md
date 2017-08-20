@@ -6,10 +6,12 @@
 
 ## Installation
 
+Since you can only have one instance type of graphql schema in your dependency tree, we leave you  the discretion of managing the graphql package yourself.
+
 ```
-npm install --save bs-graphql
+npm install --save graphql bs-graphql
 # or
-yarn add bs-graphql
+yarn add graphql bs-graphql
 ```
 
 As always, you will need to indicate to BuckleScript that the binding is available.
