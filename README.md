@@ -1,6 +1,6 @@
 # BuckleScript GraphQL bindings
 
-[![CircleCI](https://circleci.com/gh/rricard/bs-graphql.svg?style=svg)](https://circleci.com/gh/rricard/bs-graphql)
+[![CircleCI](https://circleci.com/gh/rricard/bs-graphql-bindings.svg?style=svg)](https://circleci.com/gh/rricard/bs-graphql-bindings)
 
 This repository stores a collection of [BuckleScript](https://bucklescript.github.io/) bindings for various, widely used, [GraphQL](http://graphql.org/) projects.
 
