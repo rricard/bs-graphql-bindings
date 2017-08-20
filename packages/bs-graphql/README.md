@@ -6,8 +6,6 @@
 
 ## Installation
 
-This package is just a binding and you will need to import the original graphql package as well.
-
 ```
 npm install --save bs-graphql
 # or
