@@ -1,0 +1,28 @@
+{
+  "name": "bs-apollo-server-express",
+  "version": "0.3.0",
+  "description": "BuckleScript binding for apollo-server-express",
+  "keywords": [
+    "BuckleScript",
+    "GraphQL",
+    "Apollo",
+    "Express"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w",
+    "pretest": "npm run build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "apollo-server-express": "^1.1.0",
+    "bs-graphql": "^0.3.0",
+    "bs-express": "^0.0.2"
+  },
+  "devDependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
+  }
+}

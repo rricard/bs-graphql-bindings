@@ -12,6 +12,7 @@ The following packages are contained in this repository and published on npm:
 |---------|----------|-----|-------------|
 | [`bs-graphql`](./packages/bs-graphql) | [`graphql-js`](https://github.com/graphql/graphql-js/) | [![npm version](https://badge.fury.io/js/bs-graphql.svg)](https://badge.fury.io/js/bs-graphql) | Core GraphQL bindings over the JS reference implementation |
 | [`bs-graphql-tools`](./packages/bs-graphql-tools) | [`graphql-tools`](https://github.com/apollographql/graphql-tools/) | [![npm version](https://badge.fury.io/js/bs-graphql-tools.svg)](https://badge.fury.io/js/bs-graphql-tools) | Bindings for the Apollo GraphQL server tools |
+| [`bs-apollo-server-express`](./packages/bs-apollo-server-express) | [`apollo-server-express`](https://github.com/apollographql/apollo-server/) | [![npm version](https://badge.fury.io/js/bs-apollo-server-express.svg)](https://badge.fury.io/js/bs-apollo-server-express) | Bindings to mount an apollo server on express |
 
 > **WARNING**: Most of those bindings are **partial** for now! Please consult each binding's readme for more information.
 
