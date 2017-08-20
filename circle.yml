@@ -4,16 +4,21 @@ jobs:
     docker:
       - image: circleci/node:7.10
     working_directory: ~/repo
-
     steps:
       - checkout
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
-      - run: yarn install
+      - name: Install global dev env
+        run: yarn install
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}  
-      - run: yarn test
+      - name: Bootstrap lerna throughout the packages
+        run: node_modules/.bin/lerna bootstrap
+      - name: Build all packages
+        run: yarn build
+      - name: Trigger the test suite over all the packages
+        run: yarn test
