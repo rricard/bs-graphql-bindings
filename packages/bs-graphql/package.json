@@ -14,7 +14,7 @@
     "pretest": "npm run build",
     "test": "jest"
   },
-  "devDependencies": {
+  "dependencies": {
     "graphql": "^0.10.5"
   }
 }

@@ -1,6 +1,6 @@
 # bs-graphql
 
-[![npm version](https://badge.fury.io/js/bs-graphql.svg)](https://badge.fury.io/js/bs-graphql) [![CircleCI](https://circleci.com/gh/rricard/bs-graphql.svg?style=svg)](https://circleci.com/gh/rricard/bs-graphql)
+[![npm version](https://badge.fury.io/js/bs-graphql.svg)](https://badge.fury.io/js/bs-graphql)
 
 [BuckleScript](https://bucklescript.github.io/) binding for [graphql-js](http://graphql.org/graphql-js/).
 
@@ -9,9 +9,9 @@
 This package is just a binding and you will need to import the original graphql package as well.
 
 ```
-npm install --save graphql bs-graphql
+npm install --save bs-graphql
 # or
-yarn add graphql bs-graphql
+yarn add bs-graphql
 ```
 
 As always, you will need to indicate to BuckleScript that the binding is available.
@@ -37,23 +37,3 @@ let schema = GraphQL.Utilities.buildSchema "type Query { me: User } type User { 
 let rootValue = {"me": fun () => {"name": "reason"}};
 Js.log (GraphQL.run schema ::rootValue "{ me { name } }");
 ```
-
-## Contribute
-
-Only a small API surface of graphql-js is covered for now. Your help will be more than welcome to fully develop this binding.
-
-```
-git clone git@github.com:rricard/bs-graphql.git
-cd bs-graphql
-yarn
-yarn build
-```
-
-Then, you can run two watchers, one for compiling, one for testing:
-
-- `yarn watch`
-- `yarn test -- --watch`
-
-## Related projects
-
-- [bs-graphql-tools](https://github.com/rricard/bs-graphql-tools) - Build complex schemas more easily using [graphql-tools](https://github.com/apollographql/graphql-tools).
