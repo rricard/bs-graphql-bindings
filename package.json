@@ -6,6 +6,7 @@
 	"devDependencies": {
 		"bs-jest": "^0.1.0",
 		"bs-platform": "1.8.2",
+		"graphql": "^0.10.5",
 		"jest": "^19.0.2",
 		"lerna": "^2.0.0"
 	}
