@@ -1,6 +1,6 @@
 # BuckleScript GraphQL bindings
 
-[![CircleCI](https://circleci.com/gh/rricard/bs-graphql.svg?style=svg)](https://circleci.com/gh/rricard/bs-graphql)
+[![CircleCI](https://circleci.com/gh/rricard/bs-graphql-bindings.svg?style=svg)](https://circleci.com/gh/rricard/bs-graphql-bindings)
 
 This repository stores a collection of [BuckleScript](https://bucklescript.github.io/) bindings for various, widely used, [GraphQL](http://graphql.org/) projects.
 
@@ -103,8 +103,10 @@ external bodyParserJson : unit => Express.Middleware.t = "json" [@@bs.module "bo
 let () = {
   let app = Express.App.make ();
   Express.App.use app (bodyParserJson ());
-  let middleware = ApolloServerExpress.createGraphQLExpressMiddleware Schema.schema;
-  Express.App.useOnPath app middleware path::"/graphql";
+  let graphqlMiddleware = ApolloServerExpress.createGraphQLExpressMiddleware schema ::rootValue;
+  let graphiqlMiddleware = ApolloServerExpress.createGraphiQLExpressMiddleware "/graphql";
+  Express.App.useOnPath app graphqlMiddleware path::"/graphql";
+  Express.App.useOnPath app graphiqlMiddleware path::"/graphiql";
   Express.App.listen app ::port;
   Js.log ("GraphQL Server listening on http://localhost:" ^ string_of_int port)
 };

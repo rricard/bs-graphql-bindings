@@ -18,5 +18,19 @@ let () = {
               expect middleware |> toBeTruthy
             }
           )
+    );
+  describe
+    "#createGraphiQLExpressMiddleware"
+    (
+      fun () =>
+        test
+          "creates an express middleware"
+          (
+            fun () => {
+              let middleware =
+                ApolloServerExpress.createGraphiQLExpressMiddleware "/graphql" query::"{ hello }";
+              expect middleware |> toBeTruthy
+            }
+          )
     )
 };

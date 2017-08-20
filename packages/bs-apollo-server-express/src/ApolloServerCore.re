@@ -28,3 +28,13 @@ type graphqlOptions 'rootValue 'context 'response =
       Js.null_undefined (GraphQL.Type.fieldResolver Js.Types.obj_val Js.Types.obj_val),
     debug : Js.null_undefined Js.boolean
   };
+
+type graphiqlData 'variables =
+  Js.t {
+    .
+    endpointURL : string,
+    query : Js.null_undefined string,
+    variables : Js.null_undefined (Js.t 'variables),
+    operationName : Js.null_undefined string,
+    result : Js.null_undefined string
+  };
