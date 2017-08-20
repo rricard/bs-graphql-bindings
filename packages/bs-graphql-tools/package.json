@@ -1,6 +1,6 @@
 {
   "name": "bs-graphql-tools",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "BuckleScript binding for graphql-tools",
   "keywords": [
     "BuckleScript",
@@ -16,7 +16,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "bs-graphql": "^0.1.2",
+    "bs-graphql": "^0.2.0",
     "graphql-tools": "^1.2.1"
   }
 }
